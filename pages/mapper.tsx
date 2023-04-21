@@ -31,7 +31,7 @@ export default function Mapper({ x, y, cs }: Props) {
     const handleSave = (e : React.MouseEvent<HTMLButtonElement>) => {
         e.preventDefault()
 
-        let fileString = `${x} ${y} ${cs}\n`
+        let fileString = `${Math.floor(x / 2)} ${Math.floor(y / 2)} ${cs}\n`
 
         for ( let j = 0; j < y; j++ ) {     
             for ( let i = 0; i < x; i++ ) {
